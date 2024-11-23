@@ -47,80 +47,86 @@ window.onload = function () {
   const username2 = document.getElementById("username2");
   const comment2 = document.getElementById("comment2");
   const send2 = document.getElementById("send2");
-  
+
   const commentsDiv3 = document.getElementById("comments3");
   const username3 = document.getElementById("username3");
   const comment3 = document.getElementById("comment3");
   const send3 = document.getElementById("send3");
-  
+
   const commentsDiv4 = document.getElementById("comments4");
   const username4 = document.getElementById("username4");
   const comment4 = document.getElementById("comment4");
   const send4 = document.getElementById("send4");
-  
-  
 
   send1.addEventListener("click", function () {
-    const commentHTML = 
-      `<p class="-mt-1">
+    const commentHTML = `<p class="-mt-1">
         <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
           ${username1.value}
         </span>
         <span class="text-xs text-neutral-500">${comment1.value}</span>
       </p>`;
-    commentsDiv1.insertAdjacentHTML(
-      "beforeend",
-      commentHTML
-    );
+    commentsDiv1.insertAdjacentHTML("beforeend", commentHTML);
     username1.value = "";
     comment1.value = "";
   });
 
   send2.addEventListener("click", function () {
-    const commentHTML = 
-      `<p class="-mt-1">
+    const commentHTML = `<p class="-mt-1">
         <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
           ${username2.value}
         </span>
         <span class="text-xs text-neutral-500">${comment2.value}</span>
       </p>`;
-    commentsDiv2.insertAdjacentHTML(
-      "beforeend",
-      commentHTML
-    );
+    commentsDiv2.insertAdjacentHTML("beforeend", commentHTML);
     username2.value = "";
     comment2.value = "";
   });
 
   send3.addEventListener("click", function () {
-    const commentHTML = 
-      `<p class="-mt-1">
+    const commentHTML = `<p class="-mt-1">
         <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
           ${username3.value}
         </span>
         <span class="text-xs text-neutral-500">${comment3.value}</span>
       </p>`;
-    commentsDiv3.insertAdjacentHTML(
-      "beforeend",
-      commentHTML
-    );
+    commentsDiv3.insertAdjacentHTML("beforeend", commentHTML);
     username3.value = "";
     comment3.value = "";
   });
 
   send4.addEventListener("click", function () {
-    const commentHTML = 
-      `<p class="-mt-1">
+    const commentHTML = `<p class="-mt-1">
         <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
           ${username4.value}
         </span>
         <span class="text-xs text-neutral-500">${comment4.value}</span>
       </p>`;
-    commentsDiv4.insertAdjacentHTML(
-      "beforeend",
-      commentHTML
-    );
+    commentsDiv4.insertAdjacentHTML("beforeend", commentHTML);
     username4.value = "";
     comment4.value = "";
+  });
+
+  const heart1 = document.getElementById("heart1");
+  heart1.addEventListener("click", function () {
+    heart1.classList.add("stroke-brown4");
+    heart1.classList.add("fill-brown3");
+  });
+
+  const heart2 = document.getElementById("heart2");
+  heart2.addEventListener("click", function () {
+    heart2.classList.add("stroke-brown4");
+    heart2.classList.add("fill-brown3");
+  });
+
+  const heart3 = document.getElementById("heart3");
+  heart3.addEventListener("click", function () {
+    heart3.classList.add("stroke-brown4");
+    heart3.classList.add("fill-brown3");
+  });
+
+  const heart4 = document.getElementById("heart4");
+  heart4.addEventListener("click", function () {
+    heart4.classList.add("stroke-brown4");
+    heart4.classList.add("fill-brown3");
   });
 };
