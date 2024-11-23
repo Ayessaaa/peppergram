@@ -10,6 +10,8 @@ sure whatever
 ## Introducing PepperGram
 Instagram for Pepper! The girl doesn't want her own instagram account rather she wants her own instagram. So I made the sassy bun the website :D
 
+This is a website dedicated for my rabbit pepper, and this is instagram inspired. This shows fun and random memories and pictures of pepper, with randon banters on her comment sections. This is how I think pepper would run her instagram account if she'll have the chance to HAHA
+
 ### Demo
 [Demo Link](http://peppergram.s3-website-ap-southeast-1.amazonaws.com/)
 
