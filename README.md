@@ -11,7 +11,7 @@ sure whatever
 Instagram for Pepper! The girl doesn't want her own instagram account rather she wants her own instagram. So I made the sassy bun the website :D
 
 ### Demo
-[Demo Link](https://ayessaa.w3spaces-preview.com/peppergram/)
+[Demo Link](http://peppergram.s3-website-ap-southeast-1.amazonaws.com/)
 
 ### Built Using
 <div align="left">
