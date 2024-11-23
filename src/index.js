@@ -58,6 +58,11 @@ window.onload = function () {
   const comment4 = document.getElementById("comment4");
   const send4 = document.getElementById("send4");
 
+  const commentsDiv5 = document.getElementById("comments5");
+  const username5 = document.getElementById("username5");
+  const comment5 = document.getElementById("comment5");
+  const send5 = document.getElementById("send5");
+
   send1.addEventListener("click", function () {
     const commentHTML = `<p class="-mt-1">
         <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
@@ -106,6 +111,18 @@ window.onload = function () {
     comment4.value = "";
   });
 
+  send5.addEventListener("click", function () {
+    const commentHTML = `<p class="-mt-1">
+        <span class="text-xs font-semibold text-neutral-500 ml-5 -mt-2.5">
+          ${username5.value}
+        </span>
+        <span class="text-xs text-neutral-500">${comment5.value}</span>
+      </p>`;
+    commentsDiv5.insertAdjacentHTML("beforeend", commentHTML);
+    username5.value = "";
+    comment5.value = "";
+  });
+
   const heart1 = document.getElementById("heart1");
   heart1.addEventListener("click", function () {
     heart1.classList.add("stroke-brown4");
@@ -129,4 +146,26 @@ window.onload = function () {
     heart4.classList.add("stroke-brown4");
     heart4.classList.add("fill-brown3");
   });
+
+  const heart5 = document.getElementById("heart5");
+  heart5.addEventListener("click", function () {
+    heart5.classList.add("stroke-brown4");
+    heart5.classList.add("fill-brown3");
+  });
+
+  const prev5 = document.getElementById("prev5")
+  const next5 = document.getElementById("next5")
+  const img5 = document.getElementById("img5")
+
+  next5.addEventListener("click", function(){
+    img5.src = "imgs/5b.jpg"
+    prev5.classList.remove("invisible")
+    next5.classList.add("invisible")
+  })
+
+  prev5.addEventListener("click", function(){
+    img5.src = "imgs/5a.jpg"
+    next5.classList.remove("invisible")
+    prev5.classList.add("invisible")
+  })
 };
